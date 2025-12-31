@@ -8,7 +8,6 @@ RUN pip install django
 
 COPY . .
 #RUN uv sync
-CMD ["source", ".venv/bin/activate"]
-#ENTRYPOINT ["python", "app.py"]
+ENTRYPOINT ["uv", "run", "app.py"]
 
-EXPOSE 7860
+EXPOSE 7860 8000
