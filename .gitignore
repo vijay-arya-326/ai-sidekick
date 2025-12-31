@@ -1,0 +1,6 @@
+/.venv/
+sandbox/**/venv
+.idea
+memory/
+*.env
+*.pem
